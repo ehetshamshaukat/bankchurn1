@@ -1,0 +1,5 @@
+venv/
+bank_churn_prediction.egg-info
+artifacts/pickle/
+.idea/
+.DS_Store
