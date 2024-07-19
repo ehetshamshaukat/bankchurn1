@@ -6,4 +6,4 @@ artifacts/pickle/
 src/__pycache__/utils.cpython-310.pyc
 src/components/__pycache__/data_transformation.cpython-310.pyc
 src/components/__pycache__/model_trainer.cpython-310.pyc
-
+src/pipeline/__pycache__/

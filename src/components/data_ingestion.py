@@ -3,7 +3,6 @@ from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
 import os
 
-
 @dataclass
 class DataIngestionConfig:
     train_dataset_path = os.path.join("artifacts/train_test_dataset", "train.csv")
