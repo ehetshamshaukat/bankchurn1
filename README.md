@@ -3,8 +3,7 @@
 ```requirements
 Churn prediction of US bank 
 imbalance dataset 
-Classification model 
-[dataset](www.kaggle.com)
+Classification model
 ```
 
 # Environment
