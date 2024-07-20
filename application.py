@@ -6,7 +6,7 @@ gender_list = ["Male", "Female"]
 hascrcard_list = ["yes", "no"]
 isactivemember_list = ["yes", "no"]
 
-st.header("Churn Prediction")
+st.header("Bank Churn Prediction")
 
 creditscore = st.number_input("please enter credit score", value=0)
 age = st.number_input("please enter age", value=0, max_value=100)
