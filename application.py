@@ -28,6 +28,6 @@ if ok:
     p = Prediction()
     output = p.initiate_prediction(data)
     if output == 0:
-        st.subheader("exits")
+        st.subheader("leave")
     else:
         st.subheader("stay")
