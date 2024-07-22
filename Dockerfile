@@ -13,6 +13,4 @@ RUN pip3 install -r requirements.txt
 
 EXPOSE 8501
 
-ENTRYPOINT ["streamlit", "run"]
-
-CMD ["application.py"]
+ENTRYPOINT ["streamlit", "run","application.py"]
