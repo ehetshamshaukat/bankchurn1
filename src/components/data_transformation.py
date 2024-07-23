@@ -30,7 +30,7 @@ class DataTransformation:
             ])
             categorical_column_pipeline = Pipeline([
                 ("impute", SimpleImputer(strategy="most_frequent")),
-                ("encoder", OrdinalEncoder()),
+                ("encoder", OrdinalEncoder(handle_unknown='use_encoded_value', unknown_value=-1)),
                 ("standard_scaler", StandardScaler())
             ])
 
@@ -46,14 +46,12 @@ class DataTransformation:
     def initiate_data_transformation(self, train_df, test_df):
         try:
             train_dataset = pd.read_csv(train_df)
-            print(train_dataset)
             test_dataset = pd.read_csv(test_df)
 
             columns_to_drop = "exited"
             target_column = "exited"
 
             xtrain = train_dataset.drop(columns=columns_to_drop, axis=1)
-            print(xtrain)
             ytrain = train_dataset[target_column]
 
             xtest = test_dataset.drop(columns=columns_to_drop, axis=1)

@@ -1,0 +1,68 @@
+<html>
+<body>
+<form action="{{url_for('predict')}}" method="POST">
+    <div class="form-group">
+        <label for="creditscore">creditscore:</label>
+        <input type="text" id="creditscore" name="creditscore" placeholder="Enter creditscore value">
+    </div>
+
+    <div class="form-group">
+        <label for="country">country:</label>
+        <select id="country" name="country">
+            <option value="France">France</option>
+            <option value="Spain">Spain</option>
+            <option value="Germany">Germany</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="gender">gender:</label>
+        <select id="gender" name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="age">age:</label>
+        <input type="text" id="age" name="age" placeholder="Enter age value">
+    </div>
+
+
+    <div class="form-group">
+        <label for="tenure">tenure:</label>
+        <input type="text" id="tenure" name="tenure" placeholder="Enter tenure value">
+    </div>
+
+    <div class="form-group">
+        <label for="balance">balance:</label>
+        <input type="text" id="balance" name="balance" placeholder="Enter balance value">
+    </div>
+
+    <div class="form-group">
+        <label for="hascrcard">hascrcard:</label>
+        <select id="hascrcard" name="hascrcard">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+        </select>
+    </div>
+
+
+    <div class="form-group">
+        <label for="isactivemember">isactivemember:</label>
+        <select id="isactivemember" name="isactivemember">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+        </select>
+    </div>
+
+
+    <div class="form-group">
+        <label for="estimatedsalary">estimatedsalary:</label>
+        <input type="text" id="estimatedsalary" name="estimatedsalary" placeholder="Enter estimated salary">
+    </div>
+
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
