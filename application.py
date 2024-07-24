@@ -14,7 +14,6 @@ tenure = st.number_input("please enter tenure", value=0)
 balance = st.number_input("please enter balance", value=0)
 estimatedsalary = st.number_input("please enter salary", value=0)
 
-
 hascrcard = st.selectbox("does user has credit card", hascrcard_list)
 country = st.selectbox("please select country", country_list)
 gender = st.selectbox("please select gender", gender_list)
@@ -23,7 +22,7 @@ ok = st.button("predict")
 
 if ok:
 
-    f = Features(creditscore, country, gender, age,tenure, balance, hascrcard,isactivemember, estimatedsalary)
+    f = Features(creditscore, country, gender, age, tenure, balance, hascrcard, isactivemember, estimatedsalary)
     data = f.to_dataframe()
     p = Prediction()
     output = p.initiate_prediction(data)
